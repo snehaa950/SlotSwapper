@@ -69,8 +69,33 @@ SlotSwapper/
 
 ---
 
-## 🧰 Setup Instructions
+🔗 API Endpoints
 
-### 1️⃣ Clone the repository
+| Method    | Endpoint                         | Description                       |
+| --------- | -------------------------------- | --------------------------------- |
+| **POST**  | `/api/users/signup`              | Register a new user               |
+| **POST**  | `/api/users/login`               | Login and get JWT token           |
+| **GET**   | `/api/events`                    | Get all events for logged-in user |
+| **POST**  | `/api/events`                    | Create a new event                |
+| **PATCH** | `/api/events/:id/make-swappable` | Mark event as swappable           |
+| **GET**   | `/api/swappable-slots`           | View swappable slots from others  |
+| **GET**   | `/api/my-slots`                  | View user’s own swappable slots   |
+| **POST**  | `/api/slot-requests`             | Send a swap request               |
+| **GET**   | `/api/swap-requests`             | View all swap requests            |
+| **PATCH** | `/api/swap-requests/:id/accept`  | Accept a swap                     |
+| **PATCH** | `/api/swap-requests/:id/reject`  | Reject a swap                     |
 
-git clone https://github.com/snehaa950/SlotSwapper.git
+💡 Assumptions & Challenges
+
+Each user owns their own events.
+
+“Swappable” status means the user is open to trade that slot.
+
+Only “SWAPPABLE” events appear in the marketplace.
+
+JWT tokens expire after a set duration (refresh required on expiry).
+
+The hardest part was synchronizing state after swaps and ensuring authorization worked properly between users.
+
+
+
