@@ -74,4 +74,3 @@ SlotSwapper/
 ### 1️⃣ Clone the repository
 
 git clone https://github.com/snehaa950/SlotSwapper.git
-cd SlotSwapper
