@@ -93,9 +93,12 @@ Each user owns their own events.
 
 Only “SWAPPABLE” events appear in the marketplace.
 
-JWT tokens expire after a set duration (refresh required on expiry).
+Screenshots:
 
-The hardest part was synchronizing state after swaps and ensuring authorization worked properly between users.
+<img width="1300" height="836" alt="Screenshot 2025-11-06 215508" src="https://github.com/user-attachments/assets/90eed505-e27c-43b6-bd5d-9ec4bdb485be" />
+<img width="1418" height="1017" alt="Screenshot 2025-11-06 215527" src="https://github.com/user-attachments/assets/44bdeafd-1eba-4596-a903-5e3fe0a76f06" />
+<img width="1372" height="859" alt="Screenshot 2025-11-06 215602" src="https://github.com/user-attachments/assets/5b8d3209-25fd-4267-8a0a-19f85542d321" />
+
 
 
 
